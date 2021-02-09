@@ -53,18 +53,45 @@
 
     <div class="wrapper">
         <h2> How to setup a web server on your local computer using docker</h2>
-        <p> <ul>Introduction to Docker</ul>
-            In the present world, Docker is an important term,
+        <p> <strong>Introduction to Docker</strong></p>
+        <p>In the present world, Docker is an important term </p>
 
            <ul><li>Often used in CI/CD platform that packages and runs the application with its dependencies inside a container
            </li></ul>
         <ul><li> Is a standard for Linux Containers</li></ul>
             <ul><li>  A Container is a runtime that runs under any Linux kernel and provides a private machine-like space under Linux
             </li></ul></p>
-    </div>
+        <p>How we can build a web server image which can be used to build containers.</p>
+    <p>In our example, we are going to use the Apache Web Server on Ubuntu to build our image.
+        Let’s follow the steps given below, to build our web server Docker file.</p>
+        <p><strong>Step 1 </strong> − The first step is to build our Docker File.
+    Let’s use vim and create a Docker File with the following information.</p>
 
 
+        <img src="images/dockerimg1.PNG" height="400" width="1180"/>
+ <p>
+     We are first creating our image to be from the Ubuntu base image.</p>
 
+    <p> Next, we are going to use the RUN command to update all the packages on the Ubuntu system.</p>
+
+    <p> Next, we use the RUN command to install apache2 on our image.</p>
+
+    <p> Next, we use the RUN command to install the necessary utility apache2 packages on our image.</p>
+
+    <p> Next, we use the RUN command to clean any unnecessary files from the system.</p>
+
+    <p> The EXPOSE command is used to expose port 80 of Apache in the container to the Docker host.</p>
+
+    <p> Finally, the CMD command is used to run apache2 in the background.</p>
+
+        <p><strong>Step 2 </strong>− Run the Docker build command to build the Docker file. It can be done using the following command −</p>
+        <img src="images/dockerlinux3.PNG" height="100" width="1180"/>
+        <img src="images/dockerimg1.PNG" height="196" width="768"/>
+
+        <p><strong>Step 3 </strong>− Now that the web server file has been built, it’s now time to create a container from the image. We can do this with the Docker run command.</p>
+
+
+        <img src="images/dockerlinux2.PNG" height="400" width="1150"/></div>
     <footer class="footer">
         <div class="footer-content">
             <p class="copyright">
