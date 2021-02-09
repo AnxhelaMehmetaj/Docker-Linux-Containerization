@@ -122,30 +122,7 @@ html {
 }
 
 
-.banner h1 {
-    font-family: "Baloo Da 2", serif;
-    font-size: 3rem;
-    font-weight: 50;
-    color: #fff;
-    width: 70%;
-    line-height: 2rem;
-    letter-spacing: 0.2rem;
-    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
-    opacity: 0;
-    animation: moveBanner 1s 0.5s forwards;
-}
 
-.banner p {
-    font-family: "Josefin Slab", serif;
-    font-size: 3rem;
-    color: #fff;
-    width: 70%;
-    letter-spacing: 0.1rem;
-    margin-bottom: 1rem;
-    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
-    opacity: 0;
-    animation: moveBanner 1s 0.7s forwards;
-}
 
 
 @keyframes moveBanner {
@@ -225,7 +202,7 @@ html {
     font-size: 5rem;
     font-weight: 300;
     color: #4b4b4b;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
 }
 
 
@@ -368,45 +345,10 @@ html {
     }
 }
 
-@media (max-width: 1300px) {
-    .team {
-        padding-bottom: 5rem;
-    }
 
-    .cards-wrapper {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 4rem;
-    }
 
-    .card {
-        margin-bottom: 8rem;
-    }
-
-    .contact-wrapper {
-        width: 90%;
-        height: 55rem;
-    }
-
-    .contact-heading {
-        margin-bottom: 2rem;
-    }
-
-    .field {
-        margin: 2rem 0;
-    }
-}
 
 @media (max-width: 1000px) {
-    .banner h1 {
-        font-size: 5rem;
-        line-height: 6rem;
-    }
-
-    .banner p {
-        font-size: 2.5rem;
-    }
-
 
     .services {
         display: flex;
@@ -431,19 +373,6 @@ html {
 
 
 }
-
-@media (max-width: 700px) {
-    .banner h1 {
-        font-size: 4rem;
-        line-height: 5rem;
-    }
-
-    .banner p {
-        font-size: 2rem;
-    }
-
-}
-
 @media (max-width: 500px) {
     html {
         font-size: 45%;
@@ -465,4 +394,24 @@ html {
     .footer {
         height: 18rem;
     }
+}
+
+.wrapper{
+    width:1180px;
+    margin: auto;
+    display: flex;
+    background-color: transparent;
+    flex-flow: row wrap;
+    margin-top: 70px;
+    font-size: 1.5rem;
+    font-weight: 40;
+
+
+}
+.wrapper>*{
+    padding: 3px;
+    margin: 5px;
+    flex: 1 100%;
+    border: 2px;
+
 }
