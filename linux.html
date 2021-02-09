@@ -52,10 +52,80 @@
     </section>
 
     <div class="wrapper">
-        <h2> What is Virtualization</h2>
-        <p> </p>
-    </div>
+        <h2> What is Linux</h2>
+        <img src="images/linux.jpg" width="1180" height="400"/>
+        <h1>Linux is a ‘can do’ platform</h1>
+        <p>For those that are concerned about getting their work done with Linux, let’s take into consideration how the average user works with a computer and how Linux can meet those needs. For the average user, a computer is a means to:
+        </p>
+          <ul> <li> Interact on social media</li>
+           <li> Read email</li>
+              <li>  Listen to music</li>
+              <li>  Watch Youtube or Netflix</li>
+              <li>  Occasionally write something</li></ul>
+        <h1>Linux lets you customize and share</h1>
+        <p>There are basically two different types of software: Proprietary and open source. With proprietary software, the code used to create the application (or operating system) is not available for public usage or viewing. Open source, on the other hand, makes the code used to create the software freely available. While the average user might not be concerned with the option to make alterations to their OS, this functionality of Linux helps to explain why this operating system doesn’t cost you anything. Linux is an open source platform, meaning that the code is available for anyone to download, change, and even redistribute. Because of this, you could download the source code for the various elements that make up a Linux distribution,
+            change them, and create your very own distribution.</p>
+    <h1>A Linux system running Docker</h1>
+<h2>Method 1: Use docker exec to Run Commands in a Docker Container</h2>
+        <img src="images/linux2.jpg" width="1180" height="400"/>
+<img src="images/linux3.jpg"  width="1180" height="400"/>
+        <img src="images/linux4.jpg" width="1180" height="400">
 
+        <img src="images/linux5.PNG" height="400" width="1180"/>
+
+    <h1>Method 2: Use the docker attach Command to Connect to a Running Container</h1>
+
+<p>
+    Introduction
+    Docker is a utility that lets you create a container for running applications. A Docker container is a fully-contained virtual machine.
+
+    This guide will show you three methods to SSH into a Docker container and run commands.
+
+    how to connect to a running docker container
+    Prerequisites
+    A Linux system running Docker
+    Preconfigured containers loaded and running
+    Access to a terminal window/command prompt (Ctrl+Alt+T or Ctrl+Alt+F2)
+    A user account with sudo privileges
+    Method 1: Use docker exec to Run Commands in a Docker Container
+    The docker exec command runs a specified command within an already running container. You can use it to SSH into a Docker container by creating a bash shell (a shell where you can type commands).
+
+    Start by pulling a Docker image if you haven’t already. For example, you can load Nginx:
+
+    sudo docker pull nginx
+    docker pull image in command line
+    Then, run the image:
+
+    sudo docker run ––name nginx–test –d nginx
+    docker run image command in the linux terminal
+    List all running containers to verify:
+
+    sudo docker ps
+    You should now see your nginx-test image loaded.
+
+    docker ps command to list all running docker containers
+    To get access and run commands in that Docker container, type the following:
+
+    sudo docker exec –it nginx-test /bin/bash
+    Now, you are logged in to the nginx-test container. Therefore, any commands you enter will perform in that container. The –i option specifies interactive, and the –t enables a terminal typing interface.
+
+    run commands on a specific docker image
+    Method 2: Use the docker attach Command to Connect to a Running Container
+    The docker attach command links a local input, output, and error stream to a container. By default, it launches in a bash shell. To connect to a running container, enter the following:</p>
+        <p><strong>sudo docker attach Container_Name</strong></p>
+
+<p>Once the command is executed, you will be working in the container. Any commands you run will affect the virtual Docker environment.</p>
+<h2>Method 3: Use SSH to Connect to a Docker Container</h2>
+        <p>You can connect to a Docker container using SSH (Secure Shell). Normally, SSH is used to connect remotely over a network to a server. The technology works the same when connecting to a virtual Docker container on your system.
+        </p>
+
+        <img src="images/linux6.PNG" height="400" width="1180"/>
+
+        <img src="images/linux7.PNG" height="400" width="1180"/>
+
+        <img src="images/linux8.PNG" height="400" width="1180"/>
+        <a href="https://phoenixnap.com/kb/how-to-ssh-into-docker-container">Read More</a>
+    </div>
 
 
     <footer class="footer">

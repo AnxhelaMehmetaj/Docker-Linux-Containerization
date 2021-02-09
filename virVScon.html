@@ -53,9 +53,49 @@
 
   <div class="wrapper">
     <h2> Virtualization VS Containerization</h2>
+    <img src="images/cont.virt.jpg" width="1180px" height="400px"/>
+    <h1>How Containers Work</h1>
 
+      <p>Containerization involves bundling an application together with all of its related configuration files, libraries and dependencies required for it to run in an efficient and bug-free way across different computing environments.
+
+        The most popular containerization ecosystems are Docker and Kubernetes.</p>
+    <h1>Containerization: Security Issues </h1>
     <p>
+      Containerization presents two security challenges. First, since containerized applications share
+      a common Operating System, security threats to the Operating System can affect the whole system. Second, and related, security scanners in containerized environments generally protect the Operating System but not the application containers, leaving the latter vulnerable.
+
+      At the same time, containerization also bolsters security since it isolates application containers to a significant degree.
     </p>
+    <h2>Virtualization Risks and Controls</h2>
+<p>The 11 risks cited in the paper are the most common relative to compute virtualization, regardless of vendor or architecture, he said. They fall into three general buckets: architectural, hypervisor software, and configuration:
+</p>
+  <ol>
+    <li>VM sprawl</li>
+    <li>Sensitive data within a VM</li>
+    <li> Security of offline & dormant VMs</li>
+    <li>Security of pre-configured (golden image) VM/active VMs</li>
+    <li> Lack of visibility and control over virtual networks</li>
+    <li>Resource exhaustion</li>
+    <li>Hypervisor security</li>
+    <li>Unauthorized access to hypervisor</li>
+    <li>Account or service hijacking through the self-service portal</li>
+    <li>Workloads of different trust levels located on the same server</li>
+    <li>  Risk due to cloud service provider APIs</li></ol>
+
+       <h2>Containerization or virtualization: What’s the right path for you?</h2>
+    <p>
+      Virtualization enables you to run multiple operating systems on the hardware of a single physical server, while containerization enables you to deploy multiple applications using the same operating system on a single virtual machine or server.
+
+      Virtual machines are great for supporting applications that require an operating system’s full functionality when you want to deploy multiple applications on a server, or when you have a wide variety of operating systems to manage. Containers are a better choice when your biggest priority is to minimize the number of servers you’re using for multiple applications.
+
+      Your use case matters too. Containers are an excellent choice for tasks with a much shorter lifecycle. With their fast set up time, they are suitable for tasks that may only take a few hours. Virtual machines have a longer lifecycle than containers, and are best used for longer periods of time.
+
+      The way forward for your organization will depend on everything from the size of your operations and workflows to your IT culture and skill sets. And, containerization and virtualization technologies are coming together in some interesting new ways that could influence your decision making.
+
+      Ultimately, virtualization and containerization may both have a place in your IT strategy. Consider your ultimate goals, immediate use cases, and team skillset before setting down a specific path. At Burwood Group, we recently leveraged containerization to run our own client-facing managed services portal: read about the project scope and outcomes here.
+
+    </p>
+<a href="https://www.burwood.com/blog-archive/containerization-vs-virtualization">Read More</a>
   </div>
 
 

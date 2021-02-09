@@ -50,9 +50,29 @@
 
   <div class="wrapper">
     <h2> What is Virtualization</h2>
-    <img src=""
-    <p> Virtualization enables you to run multiple operating systems on the hardware of a single physical server, while containerization enables you to deploy multiple applications using the same operating system on a single virtual machine or server. Virtual machines are great for supporting applications that require an operating system’s full functionality when you want to deploy multiple applications on a server, or when you have a wide variety of operating systems to manage. Containers are a better choice when your biggest priority is to minimize the number of servers you’re using for multiple applications. Your use case matters too. Containers are an excellent choice for tasks with a much shorter lifecycle. With their fast set up time, they are suitable for tasks that may only take a few hours. Virtual machines have a longer lifecycle than containers, and are best used for longer periods of time. The way forward for your organization will depend on everything from the size of your operations and workflows to your IT culture and skill sets. And, containerization and virtualization technologies are coming together in some interesting
-      new ways that could influence your decision making.</p>
+    <img src="images/virtualization.png" width="1180" height="400"/>
+    <p> Virtualization provides for the existence of multiple, smaller virtual servers, within the framework of a larger server’s physical environment. The virtualization software which runs on the parent basically allocates resources to each virtual server along with its own operating system, drivers, binaries, libraries, and applications. These virtual servers are isolated from each other and have no knowledge they are running within
+      a virtualized platform nor aware that they are sharing resources with the other virtual machines.
+      The software that is vital for virtualization is called a hypervisor. A hypervisor can be hardware, software, or firmware-based. Essentially, it is a virtual layer that separates the physical server from the virtual machines and allows for multiple guest operating systems to run side by side within that system. The hypervisor ensures that the VM’s have access to a defined amount of resources utilizing the main physical servers resources and that they remain separated and are portioned to each virtual machine as configured. VM’s can also update and modify the applications within their own space without affecting the applications on another virtual machine.
+
+      VM’s can also provide an increased level of security as with isolation comes better control of the applications contained within each VM. If one VM becomes infected or corrupted, it will be kept separate from the other virtual machines as well as the host server. The VM is not aware of malicious activity on other portions of the physical server they reside on.
+
+      Since each virtual machine is essentially a virtual copy of the hardware of the host server and uses its own operating system, it can be resource-heavy and slow, while consuming a great deal of memory and processing power. Each virtual machine can also be significant in size, which limits its portability and thus cannot easily be shared.
+
+    </p>
+    <h1>HW virtualization definition</h1>
+     <p>HW virtualization means the same thing as hardware virtualization: it’s a virtualization solution where end result (virtualization unit, usually a Virtual Machine) provides a completely isolated virtual representation of a hardware platform, running on top of specialised software and hardware.
+
+       The purpose of hw virtualization is to allow you run multiple virtual environments with virtual hardware, all sharing physical hardware available on your system. This achieves higher density: instead of running one OS environment per physical server, you can potentially run dozens of same or different OS environments on the same server.
+
+    <ul>Most common examples of such solutions are desktop virtualization products:</ul>
+
+    <li>VirtualBox</li>
+     <li> Parallels</li>
+    <li>VMware Workstation</li>
+       All of these software solutions allow you to create a virtual machine by specifying desired number of virtual CPUs, virtual disks and allocated memory.</p>
+  <p> <a href="https://www.unixtutorial.org/hw-virtualization/">Read More</a> </p>
+
   </div>
 
 
